@@ -3,7 +3,7 @@ const MDCTabBar = mdc.tabBar.MDCTabBar;
 const select = new MDCSelect(document.querySelector('.mdc-select'));
 
 select.listen('MDCSelect:change', () => {
-  alert(`Selected option at index ${select.selectedIndex} with value "${select.value}"`);
+  alert(`Selected option ${select.selectedIndex}, "${select.value}"`);
 });
 
 const tabBar = new MDCTabBar(document.querySelector('.mdc-tab-bar'));
@@ -107,7 +107,7 @@ tabBar.listen('MDCTabBar:activated', e => {
     `;
   } else if (index == 3) {
     main.innerHTML=`
-      <h2 class="subheading">Treatment</h2>
+      <h2 class="subheading">Treatments</h2>
       <p>So far there is no specific medicine to prevent or treat coronavirus disease (COVID-19). People may need supportive care to help them breathe.</p>
       <p>🌎 Learn more at: <a href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/symptoms.html?topic=tilelink#t">Public Health Candada COVID19 Treatment</a></p>
     `;
