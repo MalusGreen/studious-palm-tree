@@ -12,53 +12,48 @@
   </head>
   <body>
     <header id="app-bar">
-      <h1 class="heading">🧪 Vira!ert</h1>
-      <div class="mdc-select">
-        <div class="mdc-select__anchor">
-          <i class="mdc-select__dropdown-icon"></i>
-          <div class="mdc-select__selected-text"></div>
-          <span class="mdc-floating-label">Viewing</span>
-          <div class="mdc-line-ripple"></div>
-        </div>
-      
-        <div class="mdc-select__menu mdc-menu mdc-menu-surface">
-          <ul class="mdc-list">
-            <li class="mdc-list-item mdc-list-item--selected" data-value="covid-19">
-              COVID-19
-            </li>
-            <li class="mdc-list-item" data-value="ebola">
-              Ebola
-            </li>
-            <li class="mdc-list-item" data-value="mers">
-              MERS
-            </li>
-            <li class="mdc-list-item" data-value="swine-flue">
-              Swine Flu
-            </li>
-            <li class="mdc-list-item" data-value="swine-flue">
-              SARS
-            </li>
-            <li class="mdc-list-item" data-value="swine-flue">
-              HIV/AIDS
-            </li>
-          </ul>
+      <div style="padding: 10px 15px;width: 100%;display: flex;justify-content: space-between;">
+        <h1 class="heading">🧪 Vira!ert</h1>
+        <div class="mdc-select">
+          <div class="mdc-select__anchor">
+            <i class="mdc-select__dropdown-icon"></i>
+            <div class="mdc-select__selected-text"></div>
+            <span class="mdc-floating-label">Viewing</span>
+            <div class="mdc-line-ripple"></div>
+          </div>
+        
+          <div class="mdc-select__menu mdc-menu mdc-menu-surface">
+            <ul class="mdc-list">
+              <li class="mdc-list-item mdc-list-item--selected" data-value="covid-19">
+                COVID-19
+              </li>
+              <li class="mdc-list-item" data-value="ebola">
+                Ebola
+              </li>
+              <li class="mdc-list-item" data-value="mers">
+                MERS
+              </li>
+              <li class="mdc-list-item" data-value="swine-flue">
+                Swine Flu
+              </li>
+              <li class="mdc-list-item" data-value="swine-flue">
+                SARS
+              </li>
+              <li class="mdc-list-item" data-value="swine-flue">
+                HIV/AIDS
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
     <main class="main-content" id="main-content">
-      <h2 style="width:100%; font-size: 20px">Overview</h2>
-      <hr style="width:100%"/>
+      <h2 class="subheading">Overview</h2>
       <p style="line-height: 1.71429;font-size: 14px;letter-spacing:.25px;font-family:Roboto">Coronavirus disease (COVID-19) is an infectious disease caused by a new virus.
         The disease causes respiratory illness (like the flu) with symptoms such as a cough, fever, and in more severe cases, difficulty breathing. You can protect yourself by washing your hands frequently, avoiding touching your face, and avoiding close contact (1 meter or 3 feet) with people who are unwell.</p>
       <p style="line-height: 1.71429;font-size: 14px;letter-spacing:.25px;font-family:Roboto">
         🌎 Learn more at: <a href="https://www.who.int/">https://www.who.int/</a></p>
-      <hr style="width:100%"/>
-      
-      <button class="mdc-button" id="2">
-        <div class="mdc-button--raised">
-        <span class="mdc-button__label">Begin Diagnostic Questionnaire</span></div>
-      </button>
-      <h2 style="width:100%; font-size: 20px">Resources</h2>
+      <h2 class="subheading">Resources</h2>
       <div class="mdc-card demo-card">
         <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
           <div class="mdc-card__media mdc-card__media--16-9 demo-card__media" style="background-image: url(&quot;https://www.google.com/covid19/static/yt-tn-learn-at-home.jpg&quot;);"></div>
@@ -119,7 +114,7 @@
                       </span>
                       <span class="mdc-tab__ripple mdc-ripple-upgraded" style="--mdc-ripple-fg-size:239px; --mdc-ripple-fg-scale:1.73589; --mdc-ripple-fg-translate-start:105.7px, -60.1px; --mdc-ripple-fg-translate-end:79.7125px, -83.5px;"></span>
                     </button>
-                    <button class="mdc-tab mdc-tab--stacked" role="tab" aria-selected="false" tabindex="-1" id="mdc-tab-36" onclick="window.location.href='symptom.html';">
+                    <button class="mdc-tab mdc-tab--stacked" role="tab" aria-selected="false" tabindex="-1" id="mdc-tab-36">
                       <span class="mdc-tab__content">
                         <span class="mdc-tab__icon material-icons" aria-hidden="true">S</span>
                         <span class="mdc-tab-indicator">
@@ -128,7 +123,7 @@
                       </span>
                       <span class="mdc-tab__ripple mdc-ripple-upgraded"></span>
                     </button>
-                    <button class="mdc-tab mdc-tab--stacked" role="tab" aria-selected="false" tabindex="-1" id="mdc-tab-37" onclick="window.location.href='prevention.html';">
+                    <button class="mdc-tab mdc-tab--stacked" role="tab" aria-selected="false" tabindex="-1" id="mdc-tab-37">
                       <span class="mdc-tab__content">
                         <span class="mdc-tab__icon material-icons" aria-hidden="true">P</span>
                         <span class="mdc-tab-indicator">
@@ -137,7 +132,7 @@
                       </span>
                       <span class="mdc-tab__ripple mdc-ripple-upgraded"></span>
                     </button>
-                    <button class="mdc-tab mdc-tab--stacked" role="tab" aria-selected="false" tabindex="-1" id="mdc-tab-38" onclick="window.location.href='treatment.html';">
+                    <button class="mdc-tab mdc-tab--stacked" role="tab" aria-selected="false" tabindex="-1" id="mdc-tab-38">
                       <span class="mdc-tab__content">
                         <span class="mdc-tab__icon material-icons" aria-hidden="true">T</span>
                         <span class="mdc-tab-indicator">
