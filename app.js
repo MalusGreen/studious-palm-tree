@@ -9,12 +9,15 @@ select.listen('MDCSelect:change', () => {
 
 const tabBar = new MDCTabBar(document.querySelector('.mdc-tab-bar'));
 
-tabBar.listen('MDCTabBar:activated', e => {
+const tabs = Array.from(document.getElementsByClassName("mdc-tab"));
+tabs.map((tab, index) => tab.addEventListener('click', e => switch_screen(index)));
+
+console.log(tabs);
+function switch_screen(index) {
   values = [];
-  const index = e.detail.index;
-  
+
   const main = document.querySelector("#main-content");
-  // Home Page
+
   if (index == 0) {
     main.innerHTML=`
       <h2 class="subheading">Overview</h2>
@@ -116,7 +119,7 @@ tabBar.listen('MDCTabBar:activated', e => {
       <p>🌎 Learn more at: <a href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/symptoms.html?topic=tilelink#t">Public Health Canada COVID-19 Treatment</a></p>
     `;
   }
-});
+}
 
 function render_question(number) {
   const main = document.querySelector("#main-content");
@@ -184,7 +187,6 @@ function render_question(number) {
         <h3 style="display:flex;justify-content:center;text-align: center;font-size:18px">Your symptoms are best treated at home than taking a risk at the hopsital. Maintain social distancing!</h3>
       `;
     }
-    
   }
 }
 
