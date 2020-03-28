@@ -10,10 +10,10 @@ select.listen('MDCSelect:change', () => {
 const tabBar = new MDCTabBar(document.querySelector('.mdc-tab-bar'));
 
 const tabs = Array.from(document.getElementsByClassName("mdc-tab"));
-tabs.map((tab, index) => tab.addEventListener('click', e => switch_screen(index)));
+tabs.map((tab, index) => tab.addEventListener('click', e => switch_screen(e, index)));
 
 console.log(tabs);
-function switch_screen(index) {
+function switch_screen(e, index) {
   values = [];
 
   const main = document.querySelector("#main-content");

@@ -45,6 +45,7 @@ body > * {
 
 body footer {
   width: 100%;
+  background-color: whitesmoke;
 }
 
 mdc-button__label {
@@ -157,8 +158,18 @@ main .mdc-image-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 14px;
 }
 
+.lines {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.lines li {
+  display: flex;
+  justify-content: space-between;
+}
 @media only screen and (max-width: 500px) {
   html {
     visibility: visible;
