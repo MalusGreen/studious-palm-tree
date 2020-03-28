@@ -77,6 +77,11 @@ function switch_screen(e, index) {
   } else if (index == 1) {
     main.innerHTML=`
       <h2 class="subheading">Symptoms</h2>
+      <div style="width:100%;display:flex;justify-content:center;margin:10px 0;margin-top: 15px;">
+        <button class="mdc-button mdc-button--raised" id="2" onclick="render_question(1)">
+          <span class="mdc-button__label">Try Diagnostic Questionnaire</span>
+        </button>
+      </div>
       <p style="line-height: 1.71429;font-size: 14px;letter-spacing:.25px;font-family:Roboto">People may be sick with the virus for 1 to 14 days before developing symptoms. The most common symptoms of coronavirus disease (COVID-19) are fever, tiredness, and dry cough. Most people (about 80%) recover from the disease without needing special treatment.
         More rarely, the disease can be serious and even fatal. Older people, and people with other medical conditions (such as asthma, diabetes, or heart disease), may be more vulnerable to becoming severely ill.
         People may experience:</p>
@@ -88,11 +93,6 @@ function switch_screen(e, index) {
       </ul>
       <p style="line-height: 1.71429;font-size: 14px;letter-spacing:.25px;font-family:Roboto">
         🌎 Learn more at: <a href="https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/symptoms.html#s">Public Health Canada COVID-19 Symptoms</a></p>
-      <div style="width:100%;display:flex;justify-content:center;margin:10px 0;margin-top:auto">
-        <button class="mdc-button mdc-button--raised" id="2" onclick="render_question(1)">
-          <span class="mdc-button__label">Try Diagnostic Questionnaire</span>
-        </button>
-      </div>
     `;
   } else if (index == 2) {
     main.innerHTML=`
