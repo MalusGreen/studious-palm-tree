@@ -193,3 +193,10 @@ function render_question(number) {
 function add_value(val) {
   values.push(val);
 }
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+
+if (urlParams.get("flag")) {
+  render_question(1);
+}

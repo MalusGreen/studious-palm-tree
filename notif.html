@@ -16,12 +16,8 @@
 
     html {
       font-family: "Helvetica";
-      background: url("./wallpaper.png");
-      background-repeat: no-repeat;
-      background-size: auto;
-      background-position-x: center;
-      background-position-y: center;
       height: 100%;
+      visibility: hidden;
     }
 
     header {
@@ -68,11 +64,20 @@
       justify-content: center;
       padding-right: 5px;
     }
+
+    @media only screen and (max-width: 430px) {
+      html {
+        visibility: visible;
+        background: url("./wallpaper.png");
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position-x: center;
+        background-position-y: center;
+      }
+    }
+
   </style>
   <script>
-    function hey() {
-      console.log("hi");
-    }
   </script>
   <body>
     <header>
@@ -80,7 +85,7 @@
       <p>Thu, April 15</p>
     </header>
     <main>
-      <div class="notification" onclick="window.location.href='index.html'">
+      <div class="notification" onclick="window.location.href='index.html?flag=true'">
         <span class="icon">🧪</span>
         <div style="display: flex;flex-direction: column;padding: 5px 0;justify-content: space-between;margin-right: auto;">
           <span style="font-size:15px;font-weight:550">Visiting for Coronavirus?</span>
