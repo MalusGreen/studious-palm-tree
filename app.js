@@ -25,6 +25,12 @@ function switch_screen(e, index) {
         The disease causes respiratory illness (like the flu) with symptoms such as a cough, fever, and in more severe cases, difficulty breathing. You can protect yourself by washing your hands frequently, avoiding touching your face, and avoiding close contact (1 meter or 3 feet) with people who are unwell.</p>
       <p style="line-height: 1.71429;font-size: 14px;letter-spacing:.25px;font-family:Roboto">
         🌎 Learn more at: <a href="https://www.who.int/">https://www.who.int/</a></p>
+      <h2 class="subheading">Fact Checker</h2>
+      <p>Protect yourself from misinformation.</p>
+      <ul class="lines">
+        <li><span><a href="google.com">N95 Masks protect against COVID-19</a></span><span>❌</span></li>
+        <li><span><a href="google.com">Hand sanitizer kills COVID-19</a></span><span>✔️</span></li>
+      </ul>
       <h2 class="subheading">Resources</h2>
       <div class="cards">
         <div class="mdc-card demo-card">
@@ -197,6 +203,8 @@ function add_value(val) {
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 
+
 if (urlParams.get("flag")) {
+  tabs[1].click();
   render_question(1);
 }
